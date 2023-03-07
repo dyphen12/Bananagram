@@ -2,4 +2,5 @@ flask==2.1.1
 flask-restful==0.3.9
 tensorflow==2.11.0
 numpy
+flask-cors
 Pillow==9.0.0

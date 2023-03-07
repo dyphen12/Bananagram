@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_restful import Api, Resource
+from flask_cors import CORS
 import os
 from bananagram import bananapi
 
@@ -8,6 +9,7 @@ from bananagram import bananapi
 
 app = Flask(__name__)
 api = Api(app)
+CORS(app)
 
 class Prediction(Resource):
     def post(self):
